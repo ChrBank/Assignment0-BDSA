@@ -16,5 +16,5 @@ public class ProgramsTest
         // Assert
         var output = writer.GetStringBuilder().ToString().TrimEnd();
         output.Should().Be("Hello, World!");
-    }
+    } 
 }
