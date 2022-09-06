@@ -42,5 +42,32 @@ public class LeapYearTest
         // Assert
             leapYearBool.Should().Be(false);
     }
-    
+
+     [Fact]
+    public void Check_Nay()
+    {
+        // Arrange
+        int year = 100;
+        LeapYear leapYear = new LeapYear();
+
+        // Act
+           string s = leapYear.YayOrNay(year);
+            
+        // Assert
+            s.Should().Be("Nay");
+    }
+
+     [Fact]
+    public void Check_Yay()
+    {
+        // Arrange
+        int year = 2024;
+        LeapYear leapYear = new LeapYear();
+
+        // Act
+           string s = leapYear.YayOrNay(year);
+            
+        // Assert
+            s.Should().Be("Yay");
+    }
 }

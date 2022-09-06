@@ -1,6 +1,19 @@
 namespace Helloworld{
 
     public class LeapYear{
+        public string YayOrNay(int year){
+            //Console.WriteLine("Type in a year to check if it is a leap year:");
+            //year = Convert.ToInt32(Console.ReadLine());
+            
+            if(IsLeapYear(year)==true){
+                //Console.WriteLine("Yay");
+                return "Yay";
+            } 
+            else {
+               // Console.WriteLine("Nay");
+                return "Nay";
+            }
+        }
         public bool IsLeapYear(int year){
             if (year%4 == 0 && year%100 != 0){
                 return true;
