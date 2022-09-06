@@ -23,7 +23,23 @@ namespace Helloworld{
             } 
             return false;
         }
-        //The Datetime.IsLeapYear(year) should work
+        //The Datetime.IsLeapYear(year) should work 
+        public bool IsNumericTypeOfInt32(object year){
+            if(year.GetType() == typeof(Int32)){
+                return true;
+            }
+            throw new FormatException();
+            return false;
+        }
+
+        public bool IsGreatThan1582(int year){
+            if(year>1582){
+                return true;
+            }
+            throw new IOException();
+            return false;
+
+        }
     }
 
 }
