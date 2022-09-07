@@ -47,7 +47,7 @@ public class LeapYearTest
     public void Check_Nay()
     {
         // Arrange
-        int year = 100;
+        int year = 1700;
         LeapYear leapYear = new LeapYear();
 
         // Act
